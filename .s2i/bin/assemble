@@ -1,6 +1,6 @@
 #!/bin/bash
 #pip install flask -i https://pypi.douban.com/simple
 pwd
-find .
+find /tmp
 echo "hello"
 mv /tmp/* ./
