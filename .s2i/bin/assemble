@@ -1,4 +1,5 @@
 #!/bin/bash
-pip install flask -i https://pypi.douban.com/simple
+#pip install flask -i https://pypi.douban.com/simple
+pwd
 echo "hello"
 mv /tmp/* ./
