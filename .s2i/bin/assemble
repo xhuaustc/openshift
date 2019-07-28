@@ -2,5 +2,8 @@
 #pip install flask -i https://pypi.douban.com/simple
 pwd
 find /tmp
+cat /tmp/scripts/assemble
+find /usr/libexec/s2i
 echo "hello"
 mv /tmp/* ./
+echo "abc"
