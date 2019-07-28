@@ -1,5 +1,3 @@
-FROM mysql:latest as builder
-
 FROM python:alpine
 RUN pip install flask -i https://pypi.douban.com/simple
 ADD app.py ./
