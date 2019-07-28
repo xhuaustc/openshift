@@ -5,5 +5,4 @@ find /tmp
 cat /tmp/scripts/assemble
 find /usr/libexec/s2i
 echo "hello"
-mv /tmp/* ./
-echo "abc"
+mv /tmp/src/* ./
