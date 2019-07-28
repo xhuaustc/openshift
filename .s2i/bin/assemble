@@ -1,5 +1,5 @@
 #!/bin/bash
-#pip install flask -i https://pypi.douban.com/simple
+pip install flask -i https://pypi.douban.com/simple
 pwd
 find /tmp
 cat /tmp/scripts/assemble
