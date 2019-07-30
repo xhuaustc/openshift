@@ -2,7 +2,7 @@
 if [ -d /tmp/artifacts/site-packages ]
 then
   rm -rf ./venv/lib/python3.7/site-packages
-mv /tmp/artifacts/* ./venv/lib/python3.7/
+  mv /tmp/artifacts/* ./venv/lib/python3.7/
 fi
 mv /tmp/src/* ./
 if [ -f requirements.txt ]
