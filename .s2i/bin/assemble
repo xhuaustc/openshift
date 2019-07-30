@@ -4,5 +4,5 @@ then
   rm -rf ./venv/lib/python3.7/site-packages
 fi
 mv /tmp/artifacts/* ./venv/lib/python3.7/
-pip install -r requirements.txt -i https://pypi.douban.com/simple
 mv /tmp/src/* ./
+pip install -r requirements.txt -i https://pypi.douban.com/simple
