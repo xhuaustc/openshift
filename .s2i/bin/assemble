@@ -1,8 +1,8 @@
 #!/bin/bash
-pip install flask -i https://pypi.douban.com/simple --user
-pwd
-find /tmp
-cat /tmp/scripts/assemble
-find /usr/libexec/s2i
-echo "hello"
+if [ -d /tmp/artifacts/site-packages ]
+then
+  rm -rf ./venv/lib/python3.7/site-packages
+fi
+mv /tmp/artifacts/* ./venv/lib/python3.7/
+pip install -r requirements.txt -i https://pypi.douban.com/simple
 mv /tmp/src/* ./
