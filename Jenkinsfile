@@ -3,12 +3,13 @@ pipeline{
 	stages{
 		stage("start build"){
 			steps{
-				sh 'echo start build'
+				openshiftBuild bldCfg: 'flask-app-s2i',  commitID: 'master', namespace: 'flask-app', showBuildLogs: 'true'
+
 			}
 		}
 		stage("start deploy"){
 			steps{
-				sh 'echo start deploy'
+				openshiftDeploy  depCfg: 'flask-app', namespace: 'flask-app'
 			}
 		}
 	}
