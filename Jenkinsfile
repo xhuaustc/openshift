@@ -9,7 +9,7 @@ pipeline{
 		}
 		stage("start deploy"){
 			steps{
-				openshiftDeploy  depCfg: 'flask-app', namespace: 'flask-app'
+				openshiftDeploy  depCfg: 'flask-app-s2i', namespace: 'flask-app'
 			}
 		}
 	}
