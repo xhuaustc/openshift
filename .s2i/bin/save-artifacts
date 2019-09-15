@@ -1,6 +1,2 @@
 #!/bin/sh
 cd /opt/venv/lib/python3.7
-if [ -d site-packages ]
-then
-  tar cf - ./site-packages
-fi
